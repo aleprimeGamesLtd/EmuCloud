@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EmuCloud</title>
+    <link rel="shortcut icon" href="./src/icon.png" type="image/x-icon">
+
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!--Font Awesome-->
+
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="./bootstrap-5.3.2-dist/css/bootstrap.min.css">
+    <!--Bootstrap-->
+
+    <!--Main CSS-->
+    <link rel="stylesheet" href="./css/main.css">
+    <!--Main CSS-->
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg shadow navbar-light py-2 fixed-top bg-color">
+        <div class="container-fluid">
+            <a href="#header" class="navbar-brand text-dark justify-content-center align-item-center d-flex order-lg-0">
+                <img src="./src/icon.png" alt="EmuCloud" style="width: 44px; height: 44px;">
+                <span class="ms-2 h2">EmuCloud</span>
+
+            </a>
+            <div class="order-lg-2 nav-btns">
+
+                <button class="btn position-relative" type="button">
+                    <i class="fa-solid fa-bell fa-lg"></i>
+                    <span class="position-absolute top-0 start-100 translate-middle badge bg-primary">5</span>
+                </button>
+
+                <button class="btn position-relative" type="button">
+                    <i class="fa-solid fa-heart fa-lg"></i>
+                </button>
+
+                <button class="btn position-relative" type="button">
+                    <i class="fa-solid fa-search fa-lg"></i>
+                </button>
+
+            </div>
+
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <i class="navbar-toggler-icon"></i>
+            </button>
+
+            <div class="collapse navbar-collapse order-lg-1" id="navMenu">
+                <ul class="navbar-nav mx-auto text-center">
+                    <li class="nav-item px-2 py-2">
+                        <a href="#header" class="nav-link text-uppercase">
+                            <i class="fa-solid fa-house"></i>
+                            Home
+                        </a>
+                    </li>
+
+                    <li class="nav-item px-2 py-2">
+                        <a href="#platforms" class="nav-link text-uppercase">
+                            <i class="fa-solid fa-gamepad"></i>
+                            Game Platforms
+                        </a>                        
+                    </li>
+
+                    <li class="nav-item px-2 py-2">
+                        <a href="#roms" class="nav-link text-uppercase">
+                            <i class="fa-solid fa-file"></i>
+                            My Roms
+                        </a>                        
+                    </li>
+
+                    <li class="nav-item px-2 py-2">
+                        <a href="#account" class="nav-link text-uppercase">
+                            <i class="fa-solid fa-user"></i>
+                            My Account
+                        </a>
+                    </li>
+
+                    <li class="nav-item px-2 py-2">
+                        <a href="#help" class="nav-link text-uppercase">
+                            <i class="fa-solid fa-question"></i>
+                            Help
+                        </a>
+                    </li>
+
+                    <li class="nav-item px-2 py-2">
+                        <a href="#about" class="nav-link text-uppercase">
+                            <i class="fa-solid fa-info-circle"></i>
+                            About
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <!--HEADER-->
+    <header id="header" class="vh-100 carousel slide" db-bs-ride="carousel" style="padding-top: 104px;">
+        <div class="container h-100 d-flex align-items-center carousel-inner">
+
+            <div class="text-center carousel-item active">
+                <h2 class="text-capitalize text-white">Trending</h2>
+                <h1 class="py-3 text-uppercase fw-bold text-white">Play The Most Played Retro Platforms</h1>
+                <a href="#" class="btn mt-3 text-uppercase btn-color">Play Now</a>
+            </div>
+
+            <div class="text-center carousel-item">
+                <h2 class="text-capitalize text-white">Roms</h2>
+                <h1 class="py-3 text-uppercase fw-bold text-white">Upload Your Favorite Retro Roms</h1>
+                <a href="#" class="btn mt-3 text-uppercase btn-color">Upload Now</a>
+            </div>
+
+            <div class="text-center carousel-item">
+                <h2 class="text-capitalize text-white">Premium</h2>
+                <h1 class="py-3 text-uppercase fw-bold text-white">Play The Most Powerful Platforms</h1>
+                <a href="#" class="btn mt-3 text-uppercase btn-color">Buy Premium Now</a>
+            </div>
+
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#header" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#header" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+
+    </header>
+    <!--HEADER-->
+
+    <!--Collection-->
+    <section id="collection" class="py-5">
+        <div class="container">
+            <div class="title text-center">
+                <h2 class="position-relative d-inline-block">
+                    Platforms
+                </h2>
+            </div>
+
+            <div class="row g-0">
+                <div class="d-flex flex-wrap justify-content-center mt-5 filter-button-group">
+                    <button class="btn m-2 active-filter-btn" data-filter="*" type="button">
+                        All Platforms
+                    </button>
+                    <button class="btn m-2" data-filter=".8-16bit" type="button">
+                        8/16-bit Platforms
+                    </button>
+                    <button class="btn m-2" data-filter=".32-64bit" type="button">
+                        32/64-bit Platforms
+                    </button>
+                    <button class="btn m-2" data-filter=".premium" type="button">
+                        Premium Platforms
+                    </button>
+                </div>
+            </div>
+            
+
+        </div>
+    </section>
+    <!--Collection-->
+
+
+    <!--JQUERY-->
+    <script src="./js/jquery-3.7.1.js"></script>
+    <!--JQUERY-->
+
+    <!--ISOTOPE.JS-->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <!--ISOTOPE.JS-->
+
+    <!--My JS-->
+    <script src="./js/app.js"></script>
+    <!--My JS-->
+
+    <!--Bootstrap JS-->
+    <script src="./bootstrap-5.3.2-dist/js/bootstrap.min.js"></script>
+    <!--Bootstrap JS-->
+
+</body>
+</html>

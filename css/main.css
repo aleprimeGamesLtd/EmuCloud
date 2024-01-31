@@ -1,0 +1,48 @@
+:root{
+    --blue: rgb(38, 96, 255);
+}
+
+.bg-color{
+    background-color: var(--blue);
+}
+
+.bg-primary{
+    background-color: red !important;
+    font-size: 9px;
+}
+
+.nav-link{
+    border-radius: 16px;
+    border-bottom: black;
+}
+
+.nav-link:hover{
+    transition: 0.25s;
+    color: white !important;
+    background-color: blue;
+}
+
+.btn:not(.nav-btns button){
+    background-color: white !important;
+    border-radius: 20px;
+    border-color: black;
+}
+
+.btn:not(.nav-btns button):hover{
+    background-color: aquamarine !important;
+    border-color:blue;
+}
+
+.nav-btns{
+    color:white;
+}
+
+#header{
+    background: url(../src/background0.png) top/cover no-repeat;
+}
+
+@media(min-width:992px){
+    .nav-item{
+        border-bottom: none;
+    }
+}
