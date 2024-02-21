@@ -41,6 +41,46 @@
     background: url(../src/background0.png) top/cover no-repeat;
 }
 
+/*Collection*/
+.title h2::before{
+    position: relative;
+    content: ".";
+    color: var(--blue);
+    width: 4px;
+    height: 50px;
+    background-color: var(--blue);
+    left: -10px;
+}
+
+.collection-img span{
+    top: 20px;
+    right: 20px;
+    width: auto;
+    height: 23px;
+    border-radius: 20px;
+    background-color: var(--blue);
+}
+
+.item{
+    border-radius: 20px;
+}
+
+/* Special Platforms */
+
+.img-r{
+    border-radius: 20px;
+}
+
+#offers{
+    background: url(../src/background0.png)
+    center/cover no-repeat;
+    overflow-x: hidden;
+}
+
+#offers .row{
+    min-height: 60vh;
+}
+
 @media(min-width:992px){
     .nav-item{
         border-bottom: none;
