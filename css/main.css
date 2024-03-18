@@ -71,6 +71,15 @@
     border-radius: 20px;
 }
 
+#newsletter .container{
+    max-width: 512px;
+}
+
+.form-control{
+    border-radius: 20px;
+    border-color: black;
+}
+
 #offers{
     background: url(../src/background0.png)
     center/cover no-repeat;
@@ -83,6 +92,7 @@
 
 @media(min-width:992px){
     .nav-item{
-        border-bottom: none;
+        border-bottom: black;
+        border-color: black;
     }
 }
